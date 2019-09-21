@@ -1,0 +1,12 @@
+LXC/LCD:
+1.	Sudo apt install lxd lxd-client
+2.	Sudo lxd init // this will install the lxc and lxd. Install with defaults.
+3.	lxc launch Ubuntu:18.04 // this will launch Ubuntu 18.04 lxc container.
+4.	lxc list // will display the list of lxc containers running.
+5.	lxc image list // will display the list of local lxc images. Like docker images
+6.	lxc launch ubuntu:18.04 my-ubuntu  // Will launch Ubuntu 18.04 lxc container with “my-ubuntu” name.
+7.	lxc exec my-ubuntu -- /bin/bash   // This is execute bash command on the running lxc container and gives you control. My-ubuntu is the name of the running container.
+8.	lxc info <name of lxc container> //display info about the lxc container.
+9.	lxc image info <name of the image> // display info about the local lxc image
+10.	lxc stop <container name> // stops the running container
+11.	lxc start <container name> // starts a stopped container. 
